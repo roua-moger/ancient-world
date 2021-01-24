@@ -1,0 +1,573 @@
+
+/* allgemeine Regeln  */
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* sticky header formatierungen */
+/* anfangsformatierung des sticky headers*/
+.main_h {
+  position: fixed;
+  top:0;
+  opacity:0;
+  max-height:120px;
+  z-index: 99999;
+  width: 100%;
+  overflow:hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top:0em;
+  border-bottom: 1px solid gainsboro;
+  
+}
+
+.sticky,.open-nav {
+  background-color: rgba(255, 255, 255, 0.93);
+  border-bottom: 1px solid gainsboro;
+ 
+}
+
+
+
+#hauptnav {
+  float: right;
+ padding-top:3em;
+}
+
+
+#hauptnav  ul {
+  list-style: none;
+ 
+  text-align: center;
+  float: right;
+}
+
+#hauptnav  ul li {
+  display: inline-block;
+  margin-left:0.625em;
+  line-height: 1.5; 
+  position:relative;
+}
+
+#hauptnav  ul a {
+  color: #000;
+  text-transform: uppercase;
+  
+  font-size:0.9em;
+}
+
+#hauptnav  ul a:hover {
+  color: #93ad8a !important;
+  
+}
+
+.sticky #hauptnav ul a,.open-nav #hauptnav  ul a{
+  color: #000;
+ 
+}
+
+.sub-menu{
+		display:inherit;
+		position:absolute;
+		left:-9999px;
+		top:100%;
+		z-index:999;
+		width:140px;
+		-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		background:rgba(107,91,76,0.7);
+		padding:0 !important;
+		
+		
+		
+		
+	}
+li:hover .sub-menu{
+		display:inherit;
+		position:absolute;
+		left:0;
+		
+		
+	}
+
+	
+	#hauptnav .sub-menu li{
+		display:block;
+		
+		padding:0.6em 0;
+		text-align:left;
+	}
+	
+	#hauptnav .sub-menu li a{
+		padding:0;
+		color:#fff;
+		text-transform:capitalize;
+		text-align:left;
+		
+		
+	}
+	
+	
+	
+	
+	
+	#hauptnav .sub-menu li a:hover{
+		background:rgbargba(107,91,76,0.6);
+		color:#F4A460 !important;
+		
+	}
+
+
+.open-nav {
+  max-height: 1000px !important;
+}
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+
+
+
+
+
+#logo {
+  width: 100px;
+
+  float: left;
+  z-index:10;
+  
+ 
+}
+
+.sticky #logo,.open-nav #logo {
+  color: #8f8f8f;
+}
+
+
+
+.mobile-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 1.5em;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+
+.sticky .mobile-toggle span,.open-nav .mobile-toggle span {
+  background: #8f8f8f;
+}
+
+
+
+
+.innerbox {
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+.row{
+overflow:hidden;
+}
+
+
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+ 
+}
+
+.about{
+	background: url(../bilder/higru/about1.jpg) no-repeat top center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.contact{
+	background: url(../bilder/higru/contact1.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+
+.ancient{
+	background: url(../bilder/higru/ancient.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.support{
+	background: url(../bilder/higru/support.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.contr{
+	background: url(../bilder/higru/contr.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+
+.blog{
+	background: url(../bilder/higru/blog.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.photo-gall{
+	background: url(../bilder/higru/photo-gall.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+
+.video-gall{
+	background: url(../bilder/higru/video-gall.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.egypt{
+	background: url(../bilder/egypt/10.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.greek{
+	background: url(../bilder/roman/15.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.china{
+	background: url(../bilder/china/17.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.islamic{
+	background: url(../bilder/islamic/1.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.where{
+	background: url(../bilder/where-else/incas.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.islamic-photo{
+	background: url(../bilder/islamic/8.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.gallery-higro{
+	background: url(../bilder/roman/g-10.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.egypt-photo{
+	background: url(../bilder/egypt/8.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.china-photo{
+	background: url(../bilder/china/10.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.world-photo{
+	background: url(../bilder/where-else/14.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.roman-photo{
+	background: url(../bilder/roman/g-9.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+}
+
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-52%,-60%);
+  
+}
+
+.hero #logo-img{
+	position:absolute;
+  top:65%;
+  left:50%;
+  transform:translate(-56%,-50%);
+  width:150px;
+	
+}
+.hero h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+
+
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #e8f380;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+  
+}
+
+.mouse i{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:1.5em;
+	color:#e8f380;
+	-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.mouse i:hover{
+	
+	color:rgba(234,110,72,1);
+}
+
+
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*  breakpoint bis 766px - desktop-first  */
+
+@media only screen and (max-width: 766px) {
+		  .main_h {
+			padding-top: 25px;
+			overflow:hidden;
+			
+		  }
+		  
+		  .row{
+		overflow:initial;
+		}
+		  
+		  .sticky{
+			  top:-2.5em;
+		  }
+		 
+		  
+			#hauptnav  {
+			width: 100%;
+		
+		  }
+
+		  #hauptnav  ul {
+			padding-top: 10px;
+			margin-bottom: 2em;
+			float: left;
+			text-align: center;
+			width: 100%;
+			background-color:rgba(107,91,76,0.6);
+					-webkit-border-radius: 10px 10px 10px 10px;
+					border-radius: 10px 10px 10px 10px;
+					padding:1em;
+		  }
+
+		  
+		  
+		  #hauptnav  ul li {
+			width: 100%;
+			padding: 7px 0;
+			margin: 0;
+			font-size:1em;
+			
+		  }
+		  
+		  
+		  #hauptnav  ul li a {
+			color:rgba(107,91,76,1) !important;
+			background:#eed7ad;
+			display:block;
+			padding:0.5em 0;
+			-webkit-border-radius: 10px 10px 10px 10px;
+			border-radius: 10px 10px 10px 10px;
+		  }
+		  
+		  #hauptnav  ul li a#active {
+			color:#8da782 !important;
+			
+		  }
+		  
+		  
+		  
+		  
+		  .sub-menu{
+	
+				display:none !important;
+				
+			}
+
+		  #logo {
+			float: none;
+			width:100px;
+			z-index:2;
+		  }
+
+		
+		  .mobile-toggle {
+			display: block;
+		  }
+		  
+		 
+ 
+}
+/*  ende des breakpoint bis 766px - desktop-first  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+User-agint:*
+Disallow:/bilder/privat/
+
+Sitemap:https://www.wildner.de/sitemap.xml
